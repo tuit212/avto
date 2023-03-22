@@ -9,6 +9,7 @@ import DetalsItem from "./Pages/DetalsItem/DetalsItem";
 import Home from "./Pages/Home/Home";
 import './App.scss'
 
+
 function App() {
   const [cart , setCart] = useState([]);
   const [warng , setWarng] = useState(false);

@@ -14,3 +14,18 @@
     padding: 10px;
     border-radius: 8px;
 }
+
+.plus{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    text-align: center;
+    background-color: rgb(114, 234, 9);
+    @include text (16px , 400 , 12px );
+    color: #fff;
+    font-family: cursive;
+    padding: 10px;
+    border-radius: 8px;
+}

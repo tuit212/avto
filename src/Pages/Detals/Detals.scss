@@ -33,6 +33,15 @@
                 color: #051018;
                 margin: 10px 0;
             }
+
+            .more{
+              @include text (14px , 400 , 18px );
+              color: #051018;
+
+              &:hover{
+                color: royalblue;
+              }
+            }
         }
 
         .pages__btn {

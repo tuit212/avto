@@ -1,0 +1,16 @@
+@import '../../Assets/sass/general.scss';
+
+.hero-section{
+    margin-top: 30px;
+
+    .hero {
+
+        .hero__list{
+            width: 100%;
+            @include center (flex , center , space-between);
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    }
+}

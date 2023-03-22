@@ -1,0 +1,44 @@
+@import '../../Assets/sass/general.scss';
+
+.site-header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(20, 178, 221);
+
+    .header {
+      @include center (flex , center , space-between);
+
+      &__logo{
+        @include text (24px , 600 , 24px );
+
+        .logo {
+            color: #fff;
+        }
+      }
+
+      &__navbar {
+        @include center (flex , center , none);
+        gap: 40px;
+
+        .navbar {
+            @include text (18px , 400 , 24px );
+            color: #fff;
+        }
+
+        .active {
+            position: relative;
+            color: #5dd9ef;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: #5dd9ef;
+                left: 0;
+                bottom: 0;
+            }
+        }
+      }
+    }
+}

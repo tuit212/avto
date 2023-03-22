@@ -4,7 +4,7 @@ import {data} from '../../Assets/data/data'
 import Detals from '../Detals/Detals';
 
 
-const Home = () => {
+const Home = ({handleClick}) => {
 
   
   return (
@@ -14,7 +14,7 @@ const Home = () => {
           <h2>Bizning avtomobillar</h2>
           <ul className='hero__list'>
             {data.map((item) => (
-              <Detals key={item.id} item={item} />
+              <Detals key={item.id} handleClick={handleClick} item={item} />
             ))}
           </ul>
         </div>

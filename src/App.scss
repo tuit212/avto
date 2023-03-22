@@ -1,0 +1,16 @@
+@import './Assets/sass/general.scss';
+
+.warning{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    text-align: center;
+    background-color: rgb(211, 8, 8);
+    @include text (16px , 400 , 12px );
+    color: #fff;
+    font-family: cursive;
+    padding: 10px;
+    border-radius: 8px;
+}

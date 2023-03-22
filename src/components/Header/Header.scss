@@ -40,5 +40,23 @@
             }
         }
       }
+      &__cart {
+
+        .cart{
+          position: relative;
+
+          .size {
+            position: absolute;
+            right: -15px;
+            top: 0;
+            height: 15px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #3264d0;
+            @include text (10px , 400 , 5px );
+            color: #fff;
+          }
+        }
+      }
     }
 }

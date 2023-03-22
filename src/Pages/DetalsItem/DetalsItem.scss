@@ -1,0 +1,74 @@
+@import '../../Assets/sass/general.scss';
+
+.detalsItem-section{
+    width: 100%;
+    margin-top: 50px;
+
+    .detals{
+
+        .item__top {
+          width: 100%;
+          @include center (flex , flex-start , space-between);
+
+          .left{
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 40px;
+
+            & > img {
+                width: 100%;
+                height: 500px;
+            }
+          }
+
+          .right {
+            max-width: 400px;
+            width: 100%;
+            padding: 40px 30px;
+
+            .item__top-title{
+                @include text (25px , 400 , 24px );
+                color: royalblue;
+                letter-spacing: 1px;
+            }
+
+            & > p {
+                @include text (16px , 400 , 24px );
+                word-spacing: 5px;
+                margin: 20px 0;
+            }
+
+            & > button {
+                width: 100%;
+                border: none;
+                padding: 10px 0;
+                color: #fff;
+                background-color: royalblue;
+                border-radius: 10px;
+                position: relative;
+                z-index: 2;
+                cursor: not-allowed;
+
+                &::after{
+                    position: absolute;
+                    content: ' ';
+                    width: 0;
+                    height: 100%;
+                    background-color: #2b57c7;
+                    left: 0;
+                    top: 0;
+                    border-radius: 10px;
+                    transition: all 0.5s;
+                    z-index: -1;
+                }
+    
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+          }
+        }
+    }
+}

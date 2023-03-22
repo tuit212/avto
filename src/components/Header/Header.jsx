@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.scss'
 import { Link , NavLink} from "react-router-dom";
 
-const Header = () => {
+const Header = ({size}) => {
   return (
     <div className='site-header'>
       <div className="container">
@@ -19,8 +19,9 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="header__cart">
-            <Link to={'cart'}>
-              cart
+            <Link className='cart' to={'cart'}>
+              <i class="fa-solid fa-cart-plus" style={{color: "#f5f5f5"}}></i>
+              <span className='size'>{size}</span>
             </Link>
           </div>
         </div>
